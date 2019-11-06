@@ -2,8 +2,7 @@ FDRreg = function(z, features, nulltype='theoretical', method='pr', stderr = NUL
 # False discovery rate regression
 # z = vector of z scores
 # features = design matrix of covariates, assumed NOT to have an intercept just as in vanilla lm()
-# nulltype = flag for what kind of null hypothesis to assume, theoretical/empirical/heteroscedastic
-	
+# nulltype = flag for what kind of null hypothesis to assume, theoretical/empirical/heteros
 	stopifnot(any(method=='pr', method=='efron'))
 	
 	# Set up control parameters
